@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabañas FC</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(180deg,#081224,#0f172a);
+    color:white;
+}
+
+header{
+    background:linear-gradient(90deg,#00c2c7,#ff3da6);
+    padding:25px 20px;
+    text-align:center;
+}
+
+.logo{
+    width:90px;
+    display:block;
+    margin:0 auto 10px auto;
+    transition:0.3s;
+}
+
+.logo:hover{
+    transform:scale(1.08) rotate(5deg);
+}
+
+header h1{
+    margin:0;
+    font-size:50px;
+    font-family:'Bebas Neue', sans-serif;
+    letter-spacing:2px;
+}
+
+header p{
+    margin:5px 0 0 0;
+    font-size:18px;
+}
+
+nav{
+    background:#111827;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.4);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    margin:0 16px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:17px;
+    transition:0.3s;
+    display:inline-block;
+}
+
+nav a:hover{
+    color:#ff3da6;
+    transform:translateY(-2px);
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px 90px 20px;
+}
+
+.hero h2{
+    font-size:65px;
+    font-family:'Bebas Neue', sans-serif;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:0 auto 30px auto;
+    line-height:1.6;
+}
+
+.hero img{
+    width:100%;
+    max-width:850px;
+    height:auto;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+    margin-top:20px;
+}
+
+.botones{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#ff3da6;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:10px;
+    transition:all 0.3s ease;
+}
+
+.btn:hover{
+    background:#00c2c7;
+    transform:scale(1.08);
+    box-shadow:0 0 15px rgba(0,194,199,0.6);
+}
+
+.accesos{
+    padding:60px 20px 80px 20px;
+    text-align:center;
+}
+
+.accesos h2{
+    font-size:48px;
+    font-family:'Bebas Neue', sans-serif;
+    margin-bottom:40px;
+}
+
+.contenedor-accesos{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    max-width:1200px;
+    margin:auto;
+}
+
+.card{
+    background:#1e293b;
+    width:280px;
+    padding:25px 20px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.35);
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.04);
+    box-shadow:0 14px 30px rgba(0,0,0,0.55);
+}
+
+.card h3{
+    margin-top:0;
+    font-size:26px;
+}
+
+.card p{
+    font-size:16px;
+    color:#d1d5db;
+    min-height:70px;
+}
+
+footer{
+    text-align:center;
+    padding:28px;
+    background:#111827;
+    font-size:14px;
+    color:#cbd5e1;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:14px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(0,0,0,0.35);
+    transition:0.3s;
+    font-size:15px;
+    letter-spacing:0.3px;
+}
+
+.whatsapp:hover{
+    transform:scale(1.08);
+    background:#1ebe5b;
+}
+
+@media (max-width:768px){
+    header h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:44px;
+    }
+
+    .hero img{
+        height:auto;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:8px 10px;
+        font-size:16px;
+    }
+}
+
+.frase-club{
+    margin-top:25px;
+    text-align:center;
+    font-style:italic;
+    color:#d1d5db;
+    font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="imagenes/logo.png" class="logo" alt="Logo Cabañas FC">
+    <h1>CABAÑAS FC</h1>
+    <p>Pasión por el fútbol</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="paginas/noticias.html">Noticias</a>
+    <a href="paginas/historia.html">Historia</a>
+    <a href="paginas/tienda.html">Tienda</a>
+    <a href="paginas/plantel.html">Plantel</a>
+    <a href="paginas/socios.html">Socios</a>
+    <a href="paginas/contacto.html">Contacto</a>
+    <a href="paginas/galeria.html">Galería</a>
+</nav>
+
+<section class="hero">
+    <h2>Bienvenidos al Cabañas FC</h2>
+    <p>
+        El club que representa nuestra pasión, nuestra comunidad y el orgullo de vestir
+        estos colores. Seguinos para conocer nuestras noticias, historia y productos oficiales.
+    </p>
+
+    <div class="botones">
+        <a class="btn" href="paginas/tienda.html">Ver tienda oficial</a>
+        <a class="btn" href="paginas/historia.html">Conocer la historia</a>
+    </div>
+
+    <img src="imagenes/camiseta2.jpg" alt="Cabañas FC">
+
+    <p class="frase-club">
+        "Orgullo, pasión y compromiso con nuestros colores."
+    </p>
+</section>
+
+<section class="accesos">
+    <h2>Accesos rápidos</h2>
+
+    <div class="contenedor-accesos">
+
+        <div class="card">
+            <h3>Noticias</h3>
+            <p>Enterate de todas las novedades, actividades y anuncios del club.</p>
+            <a class="btn" href="paginas/noticias.html">Ir a noticias</a>
+        </div>
+
+        <div class="card">
+            <h3>Historia</h3>
+            <p>Conocé más sobre la identidad, los valores y el camino de Cabañas FC.</p>
+            <a class="btn" href="paginas/historia.html">Ver historia</a>
+        </div>
+
+        <div class="card">
+            <h3>Tienda</h3>
+            <p>Descubrí las camisetas oficiales y ediciones de temporadas anteriores.</p>
+            <a class="btn" href="paginas/tienda.html">Comprar camisetas</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Cabañas Fútbol Club</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/595986989613?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Caba%C3%B1as%20FC" target="_blank">
+    WhatsApp
+</a>
+
+</body>
+</html>
